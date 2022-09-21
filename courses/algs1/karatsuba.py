@@ -1,20 +1,30 @@
 #!/usr/bin/env python
 
-from math import floor
-# 1 = Recursively compute ac
-# 2 = Recursively compute bd
-# 3 = Recursively compute (a+b)(c+d)
-# 3 - (1 + 2)
+# Karatsuba multiplication:
+# In the example 1234 * 5678; a = 12, b = 34, c = 56, d = 78.
+# 1: Recursively compute ac
+# 2: Recursively compute bd
+# 3: Recursively compute (a+b)(c+d)
+# 4: (a+b)(c+d) - ac - bd
+# 5: ac * 10^(2 * the length of longest multiple / 2)
+#       + step 4 * 10^(the length of longest multiple / 2)
+#       + bd
 
-i = 5678
-j = 12343465
+# For a much clearer explanation of why step 5, check:
+# https://iq.opengenus.org/karatsuba-algorithm/
+# hint: remember, if x and y can be divided into two numbers like on
+# line 4 above, x * y = (a * 10^m + b) * (c * 10^m + d)
+
+# Base case is multiplying one digit by another integer.
+# If the first or second number is a digit, return their product.
+# If neither is, split it them in two, and do a full karatsuba.
+
+# This implementation doesn't currently work for ints of varying length
+
+from math import floor
 
 def karatsuba(i, j):
     """Recursively multiply two integers"""
-#     # Base case is multiplying two digits
-#     # If the first number is a digit, and the second is also, return their product
-#     # If either is not, split it into two, and do a full karatsuba
-
     if i < 10 or j < 10:
         return i * j
     else:
@@ -44,23 +54,3 @@ if __name__ == "__main__":
     i = int(input("First integer: "))
     j = int(input("Second integer: "))
     print(karatsuba(i, j))
-
-
-
-
-
-        # i = str(i)
-        # midpoint = floor(len(i)/2)
-        # out = karatsuba(int(i[:midpoint]), int(i[midpoint:]))
-        # print(f"out i: {out}")
-        # print(f'{int(j[:midpoint])} * {int(j[midpoint:])}')
-
-        # if j > 9:
-        #     j = str(j)
-        #     midpoint = floor(len(j)/2)
-        #     out = karatsuba(int(j[:midpoint]), int(j[midpoint:]))
-        #     print(f"out j: {out}")
-        #     print(f'{int(j[:midpoint])} * {int(j[midpoint:])}')
-        #     return out
-        # print(f"i: {i}")
-        # return i

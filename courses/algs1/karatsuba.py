@@ -11,8 +11,8 @@
 #       + bd
 
 # For a much clearer explanation of why step 5, check:
-# https://iq.opengenus.org/karatsuba-algorithm/
-# hint: remember, if x and y can be divided into two numbers like on
+# https://iq.opengenus.org/karatsuba-algorithm/ (disregard their impl)
+# hint: remember, if x and y can be separated into two numbers like on
 # line 4 above, x * y = (a * 10^m + b) * (c * 10^m + d)
 
 # Base case is multiplying one digit by another integer.
@@ -21,33 +21,31 @@
 
 # This implementation doesn't currently work for ints of varying length
 
-from math import floor
-
 def karatsuba(i, j):
-    """Recursively multiply two integers"""
+    """Recursively multiply two integers of equal length"""
     if i < 10 or j < 10:
         return i * j
     else:
         i = str(i)
-        midpoint = floor(len(i)/2)
+        midpoint = int(len(i) / 2)
         a = int(i[:midpoint])
         b = int(i[midpoint:])
 
         j = str(j)
-        midpoint = floor(len(j)/2)
+        midpoint = int(len(j) / 2)
         c = int(j[:midpoint])
         d = int(j[midpoint:])
 
     ac = karatsuba(a, c)
     bd = karatsuba(b, d)
     # Remember Gauss' trick
-    g_trick = karatsuba(a+b, c+d) - ac - bd
+    g_trick = karatsuba(a + b, c + d) - ac - bd
 
-    # m/2 is the offset for returning the base in ac
-    m = max(len(str(i)),len(str(j)))
+    # m/2 is the power of 10 for returning the base to ac
+    m = max(len(str(i)), len(str(j)))
     m2 = m / 2
 
-    return ac * 10**(2*m2) + g_trick * 10**m2 + bd
+    return ac * 10**(2 * m2) + g_trick * 10**m2 + bd
 
 
 if __name__ == "__main__":

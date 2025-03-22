@@ -22,17 +22,17 @@ This is:
 
 - A place to gather and reference interesting resources for ourselves and one another.
 
-- A fantastic place to start engaging with GitHub and get your piscine flavored hyper-intimacy fix.
+- A fantastic place to start engaging with GitHub and get your peer-to-peer flavored hyper-intimacy fix.
 
 - A place to collaborate in curating those resources.
+
+- A place to track my (/our?) progress in learning c and the robot testing framework.
 
 - A perfect place for anyone looking to make their first contribution to a public repository.
 
 - A place to share your favorite tutorials, repos, code snippets, project ideas, datasets, etc. on a new topic!
 
 - A place that needs a new name.
-
-- A place to track my (/our?) progress in learning the robot framework.
 
 <br>
 

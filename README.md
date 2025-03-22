@@ -14,7 +14,7 @@
     <br/>
   </p>
 
-### Welcome to your pre 42 informational overload fix :)
+### Welcome to your informational overload fix :)
 
 <br>
 

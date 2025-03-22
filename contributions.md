@@ -27,9 +27,9 @@ the `wip:` type is uniquely relevant here as we are uploading code that may be f
 Since most of this repository will be written in english, most of these tags will often not apply.
 When contibuting in english (for example, when contributing to `templates/`, `resources/`, or `dotfiles/`) use the following tags:
 
-`add:`, `corr:`, and `org:`.
+`add:`, `update`, `corr:`, and `org:`.
 
-`add:` for addition, `corr:` for correction, or `org:` for organization when files and folders have to be deleted or reorganized without changing their content.
+`add:` for addition, `update` for an update to content, `corr:` for correction, or `org:` for organization when files and folders have to be deleted or reorganized without changing their content.
 
 <br/>
 

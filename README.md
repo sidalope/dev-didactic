@@ -1,6 +1,22 @@
-# Hi!
+<h2 align="center">Developer's Didactic</h2>
 
-### Welcome to your informational overload fix pre 42 :)
+<p align="center">
+	<a href="https://github.com/sidalope/dev-didactic/graphs/contributors">
+	<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/sidalope/dev-didactic"/>
+    </a>
+    <a href="https://github.com/sidalope/dev-didactic/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/sidalope/dev-didactic?color=0088ff" />
+    </a>
+    <a href="https://github.com/sidalope/dev-didactic/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/sidalope/dev-didactic?color=0088ff" />
+    </a>
+    <br/>
+    <br/>
+  </p>
+
+### Welcome to your pre 42 informational overload fix :)
+
+<br>
 
 This is:
 
@@ -22,10 +38,12 @@ This is:
 
 These documents are all written with Markdown. Check out the [resources page for Markdown](resources/markdown.md)!
 
-<br>
+<br/>
 
 ### Contributions
 Although this repository was adopted for use by a specific set of curious people, all contributions are welcome. We adopt the learn-by-diving-in-head-first approach which has already trauma welded some of us together, so if you want to make a contribution or a correction of any kind feel free to open a pull request!
 
-I haven't seriously engaged with GitHub in ages. So it's going to be a rocky road for all of us. Check out the [resources page for Git and GitHub](resources/git_and_github.md) for some good starting points.
+Check the [contribution guidelines](contributions.md) for more information.
+
+I haven't seriously engaged with GitHub in ages so we may be learning together. Check out the [resources page for Git and GitHub](resources/git_and_github.md) for some good starting points.
 

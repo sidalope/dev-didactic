@@ -36,8 +36,4 @@ Alt:
 “Dependency is the key problm in software at all scales.” ~ Kent Beck
 
 
-
 Defect localisation is emergent of the process. Add-test-work-trst-work-test
-
-
-
